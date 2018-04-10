@@ -14,7 +14,7 @@ export default class Note extends React.Component {
         <Text style={styles.noteText}>{this.props.val.note}</Text>
 
          <TouchableOpacity onPress={this.props.deleteMethod} style={styles.noteDelete}>
-            <Text style={styles.noteDeleteText}>Delele</Text>
+            <Text style={styles.noteDeleteText}>Удалить</Text>
          </TouchableOpacity>
       </View>
     );

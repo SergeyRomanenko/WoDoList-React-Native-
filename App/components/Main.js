@@ -43,7 +43,7 @@ export default class Main extends React.Component {
               style={styles.textInput}
               onChangeText={(noteText)=>this.setState({noteText})}
               value={this.state.noteText}
-              placeholder='Задание'
+              placeholder='Введите задание'
               placeholderTextColor='white'
               underlineColorAndroid='transparent'>
             
@@ -51,7 +51,7 @@ export default class Main extends React.Component {
           </View>
 
           <TouchableOpacity onPress={this.addNote.bind(this)} style={styles.addButton}>
-            <Text style={styles.addButtonText}>Новое задание</Text>
+            <Text style={styles.addButtonText}>Добавить</Text>
           </TouchableOpacity>
       </View>
     );

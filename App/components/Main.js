@@ -31,7 +31,7 @@ export default class Main extends React.Component {
       <View style={styles.container}>
 
           <View style={styles.header}>
-            <Text style={styles.headerText}>NOTER</Text>
+            <Text style={styles.headerText}>ToDo List</Text>
           </View>
 
           <ScrollView style={styles.scrollContainer}>
@@ -43,7 +43,7 @@ export default class Main extends React.Component {
               style={styles.textInput}
               onChangeText={(noteText)=>this.setState({noteText})}
               value={this.state.noteText}
-              placeholder='>note'
+              placeholder='Задание'
               placeholderTextColor='white'
               underlineColorAndroid='transparent'>
             
@@ -51,7 +51,7 @@ export default class Main extends React.Component {
           </View>
 
           <TouchableOpacity onPress={this.addNote.bind(this)} style={styles.addButton}>
-            <Text style={styles.addButtonText}>+</Text>
+            <Text style={styles.addButtonText}>Новое задание</Text>
           </TouchableOpacity>
       </View>
     );
@@ -84,10 +84,10 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   header: {
-      backgroundColor: '#E91E63',
+      backgroundColor: '#333',
       alignItems: 'center',
       justifyContent:'center',
-      borderBottomWidth: 10,
+      borderBottomWidth: 2,
       borderBottomColor: '#ddd'
   },
   headerText: {
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
   },
   scrollContainer: {
       flex: 1,
-      marginBottom: 100
+      marginBottom: 160
   },
   footer: {
       position: 'absolute',
@@ -118,11 +118,11 @@ const styles = StyleSheet.create({
       position: 'absolute',
       zIndex: 11,
       right: 20,
+      left:20,
       bottom: 90,
-      backgroundColor: '#E91E63',
-      width: 70,
-      height: 70,
-      borderRadius: 35,
+      backgroundColor: '#fe5621',
+      height: 60,
+      borderRadius: 30,
       alignItems: 'center',
       justifyContent: 'center',
       elevation: 8
